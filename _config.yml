@@ -1,22 +1,22 @@
 # User Settings | Edit there as per required
 
-title: accent
+title: ankit sultana
 url: "http://ankitsultana.me"
 baseurl: "/accent"
 
 # This will show up at the top of index page
 site_heading: >
-    foo <span class="faded">'s blog</span>
+    ankit <span class="faded">'s blog</span>
 
-email: your@email.com
-author: yourname
+email: ankitsultana@gmail.com
+author: Ankit Sultana
 # This description will show up in google search results
 # (for index page) etc.
 description: >
-    accent is, as Trump would put it, the best Jekyll theme around
+    A sophomore at BITS Pilani, a programmer on the web.
 
 # This will what will show against &copy; in the footer
-copyright: accent
+copyright: ankit
 # Toggle your short bio, which will displayed on your index page
 # Just toggle it and run jekyll again to see
 intro: false
@@ -39,13 +39,13 @@ comments: true
 # Note that about_footer should be true if you want
 # to see author information at the bottom of each post
 about_stub: >
-    Keep this sentence less than 13 words or it won't look good.
+    A sophomore at BITS Pilani, a programmer on the web.
 
 about_footer: true
 
 twitter_username: AnkitSultana
-github_username: yourgithub
-facebook_id: yourusername
+github_username: bk2dcradle
+facebook_id: ankitsultana10
 
 favicon: true
 favicon_location: "images/favicon.ico"
@@ -53,7 +53,7 @@ favicon_location: "images/favicon.ico"
 profile_picture: images/temp.png
 paginate: 5
 paginate_path: "/page/:num"
-tracking_id: UA-69243698-7 # GA Tracking ID
+tracking_id: UA-69243698-2
 
 # Facebook Stuff
 og_image: "includes/og_image.jpg" # This will show in facebook thumbnails
