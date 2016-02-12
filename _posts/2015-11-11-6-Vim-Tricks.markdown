@@ -167,6 +167,7 @@ For all the above the requirements, press (after selecting the text):
   3. `~`
 
 ---
+
 #### 6. Smart Curly Brackets
 
 If you use a Programming Language which use Curly Brackets `{}`, to specify scope of the function etc. You can use the mapping below to make your life easier.
