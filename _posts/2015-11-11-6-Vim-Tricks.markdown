@@ -1,0 +1,202 @@
+---
+---
+This post is intended to be a collection of "hacks", "tricks" or whatever one might wanna call them, for users who are relatively new to Vim. The idea is for a newbie to realize the potential and extent of customizability that Vim has to offer.
+
+If haven't ever tried Vim before, I strongly recommend you to follow **vimtutor**. In terminal type, `vimtutor` and follow the instructions. I think there is no better introduction to Vim than vimtutor, and that is the reason I ditched writing an article on "Getting Started with Vim".
+
+#### 1. Mapping to get into Normal Mode
+
+Do you use `Ctrl` + `[` or `Esc` to go into Normal Mode from Insert Mode?
+Instead consider using a mapping. I prefer to map `asd` to `Esc`, so whenever I am in Insert Mode, I can press `asd` and it will take me into Normal Mode.
+
+You can use any other mapping that you prefer, just make sure it doesn't conflict with any of Vim's functionality.
+
+Bottom Line, put this line in your vimrc:
+(Change *asd* to any key combination you prefer)
+
+{% highlight vim %}
+inoremap asd <Esc>
+{% endhighlight %}
+
+---
+
+#### 2. Use Templates for New Files
+
+Some languages, in certain scenarios, require a lot of boilerplate code. For example a Sport Programmer who uses C++, needs to have certain `includes` and `defines`, before writing the `main` function. For that case, you can use Vim, so that whenever you create a new C++ file using Vim, the boilerplate code is already available.
+
+We are going to use Vim's `read` command to achieve this.
+Before we start, try out the command yourself. 
+
+In Command Mode, type
+
+{% highlight vim %}
+read !date
+{% endhighlight %}
+
+You should see that the output of the Bash Command, `date` was entered into a line below the line you were on, before entering Command Mode.
+
+Now create a file `~/template.cc` and enter the boilerplate code you want to have in your new C++ file.
+You can take this for example:
+
+{% highlight cpp %}
+
+#include <iostream>
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    return 0;
+}
+{% endhighlight %}
+
+Now start a new Vim session, and in Command Mode, type
+
+{% highlight vim %}
+read ~/template.cc
+{% endhighlight %}
+
+and press Enter. You should see that the code from `template.cc` is flushed to the screen.
+
+Now paste this in your vimrc
+
+{% highlight vim %}
+autocmd BufNewFile *.cpp :read ~/.templates/template.cc
+autocmd BufNewFile *.cc  :read ~/.templates/template.cc
+{% endhighlight %}
+
+Now create a new C++ file using Vim, or type
+
+{% highlight bash %}
+vim forexample.cc
+{% endhighlight %}
+
+and you should see that the boilerplate code is already there!
+
+---
+#### 3. Customize Vim's builtin Auto-Complete
+
+You can use Vim's built in Auto Complete feature by pressing `Ctrl` + `n`. You can also use Tab to Auto-Complete. For that, copy and paste the code below in your vimrc:
+
+{% highlight vim %}
+"Use tab for auto-complete
+"=========================
+function! Tab_Or_Complete()
+  if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
+    return "\<C-N>"
+  else
+    return "\<Tab>"
+  endif
+endfunction
+inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
+set dictionary="/usr/dict/words"
+
+{% endhighlight %}
+
+You might also want to cycle through the Auto-Complete Suggestions using `j` or `k`, for that just copy and paste the lines below to your vimrc.
+
+{% highlight vim %}
+inoremap <expr> j ((pumvisible())?("\<C-n>"):("j"))
+inoremap <expr> k ((pumvisible())?("\<C-p>"):("k"))
+{% endhighlight %}
+
+---
+
+#### 4. Use Macros like a Sir
+
+You are given a task.
+
+Say you want this list,
+
+**List 1:**
+{% highlight text %}
+ADDREV
+EIGHTS
+CNTTREE
+LIS2
+{% endhighlight %}
+
+to become this:
+
+{% highlight text %}
+[ADDREV](http://spoj.com/problems/ADDREV)
+[EIGHTS](http://spoj.com/problems/EIGHTS)
+[CNTTREE](http://spoj.com/problems/CNTTREE)
+[LIS2](http://spoj.com/problems/LIS2)
+{% endhighlight %}
+
+Now say, instead of just 4 elements, you have 400, or 4000. It would be insane to do it the "traditional" way.
+
+Enter Macros!!
+
+So what are Macros? Macros are recordings of key strokes, which can be recorded and later played so it is like that you are pressing those keys but in reality you are just playing a recording.
+
+Didn't get it? Bear with me.
+Copy Paste **List 1** to a Vim session, place your cursor at the `A` of `ADDREV` and make sure you are in Normal Mode. Now hit the keys in the order mentioned below.
+
+Note that `<Esc>` means that you have to press the Escape Key (to enter Normal Mode).
+(Recording the Macro)
+{% highlight vim %}
+qai[<Esc>A]<Esc>0lyt]A(http://spoj.com/problems/<Esc>pA)<Esc>0jq
+{% endhighlight %}
+
+After hitting these keys, you should see that the first line is modified to the required line, but not the others. To modify the remaining lines, just hit the below keys:
+
+(Playing the Macro)
+{% highlight vim %}
+3@a
+{% endhighlight %}
+
+Voila! (Unless you missed something).
+
+Well the end product should be **List 2**. To explain how this worked, the keystrokes I have written under "Macro Recording" basically record all the keys between the second character, `a`, and the last character, `q`, and the keystrokes under "Macro Playing", execute the recorded keystrokes *3* times. Check out References [3] to learn how Macros work.
+
+---
+
+#### 5. AlterCase
+
+Say you want to change the case of some text selection as follows:
+
+  1. Change selected text to Uppercase.
+  2. Change selected text to Lowercase.
+  3. Invert Case of selected text.
+
+For all the above the requirements, press (after selecting the text):
+
+  1. `U`
+  2. `u`
+  3. `~`
+
+---
+#### 6. Smart Curly Brackets
+
+If you use a Programming Language which use Curly Brackets `{}`, to specify scope of the function etc. You can use the mapping below to make your life easier.
+
+{% highlight vim %}
+inoremap {<CR> {<CR>  <CR>}<up><right>
+{% endhighlight %}
+
+What it does? It creates a block whenever you type `{` and hit `Enter` and places the cursor just where you want it to. It works well for both coding styles, one which involves putting the opening brace in the current line, and the other which puts the opening brace in the next line.
+
+*Demo*: Hit the keys as mentioned in the keystroke pattern below.
+
+**Note:** `<CR>` Means Hit "Enter".
+
+{% highlight text %}
+int main()<CR>{<CR>
+{% endhighlight %}
+
+The output is shown below, Note that the underscore represents where your cursor will be after executing the above keystroke pattern.
+
+{% highlight cpp %}
+int main()
+{
+    _
+}
+{% endhighlight %}
+
+---
+**References:**
+
+1. [Vim's Read Command](http://vim.wikia.com/wiki/Append_output_of_an_external_command)
+2. [Using j/k for Auto Complete List](http://stackoverflow.com/questions/4739901/scrolling-in-vim-autocomplete-box-with-jk-movement-keys)
+3. [Macros Lesson](https://www.youtube.com/watch?v=eWfBWg8bVTQ)
