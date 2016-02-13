@@ -73,6 +73,7 @@ vim forexample.cc
 and you should see that the boilerplate code is already there!
 
 ---
+
 #### 3. Customize Vim's builtin Auto-Complete
 
 You can use Vim's built in Auto Complete feature by pressing `Ctrl` + `n`. You can also use Tab to Auto-Complete. For that, copy and paste the code below in your vimrc:
