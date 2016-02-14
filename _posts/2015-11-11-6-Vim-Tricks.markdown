@@ -24,7 +24,8 @@ inoremap asd <Esc>
 
 Some languages, in certain scenarios, require a lot of boilerplate code. For example a Sport Programmer who uses C++, needs to have certain `includes` and `defines`, before writing the `main` function. For that case, you can use Vim, so that whenever you create a new C++ file using Vim, the boilerplate code is already available.
 
-We are going to use Vim's `read` command to achieve this.
+We are going to use Vim's `read`  command to achieve this [^1].
+[^1]: [Vim's Read Command](http://vim.wikia.com/wiki/Append_output_of_an_external_command)
 Before we start, try out the command yourself. 
 
 In Command Mode, type
@@ -76,7 +77,9 @@ and you should see that the boilerplate code is already there!
 
 #### 3. Customize Vim's builtin Auto-Complete
 
-You can use Vim's built in Auto Complete feature by pressing `Ctrl` + `n`. You can also use Tab to Auto-Complete. For that, copy and paste the code below in your vimrc:
+You can use Vim's built in Auto Complete feature by pressing `Ctrl` + `n`. You can also use Tab to Auto-Complete. For that, copy and paste the code below in your vimrc [^2].
+
+[^2]: [Using j/k for Auto Complete List](http://stackoverflow.com/questions/4739901/scrolling-in-vim-autocomplete-box-with-jk-movement-keys)
 
 {% highlight vim %}
 "Use tab for auto-complete
@@ -149,7 +152,10 @@ After hitting these keys, you should see that the first line is modified to the 
 
 Voila! (Unless you missed something).
 
-Well the end product should be **List 2**. To explain how this worked, the keystrokes I have written under "Macro Recording" basically record all the keys between the second character, `a`, and the last character, `q`, and the keystrokes under "Macro Playing", execute the recorded keystrokes *3* times. Check out References [^3] to learn how Macros work.
+Well the end product should be **List 2**. To explain how this worked, the keystrokes I have written under "Macro Recording" basically record all the keys between the second character, `a`, and the last character, `q`, and the keystrokes under "Macro Playing", execute the recorded keystrokes *3* times. Check out References  to learn how Macros work [^3].
+
+[^3]: [Macros Lesson](https://www.youtube.com/watch?v=eWfBWg8bVTQ)
+
 
 ---
 
@@ -199,6 +205,3 @@ int main()
 ---
 **References:**
 
-1. [Vim's Read Command](http://vim.wikia.com/wiki/Append_output_of_an_external_command)
-2. [Using j/k for Auto Complete List](http://stackoverflow.com/questions/4739901/scrolling-in-vim-autocomplete-box-with-jk-movement-keys)
-[^3]: [Macros Lesson](https://www.youtube.com/watch?v=eWfBWg8bVTQ)
