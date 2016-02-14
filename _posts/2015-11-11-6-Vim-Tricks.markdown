@@ -149,7 +149,7 @@ After hitting these keys, you should see that the first line is modified to the 
 
 Voila! (Unless you missed something).
 
-Well the end product should be **List 2**. To explain how this worked, the keystrokes I have written under "Macro Recording" basically record all the keys between the second character, `a`, and the last character, `q`, and the keystrokes under "Macro Playing", execute the recorded keystrokes *3* times. Check out References [3] to learn how Macros work.
+Well the end product should be **List 2**. To explain how this worked, the keystrokes I have written under "Macro Recording" basically record all the keys between the second character, `a`, and the last character, `q`, and the keystrokes under "Macro Playing", execute the recorded keystrokes *3* times. Check out References [^fn1] to learn how Macros work.
 
 ---
 
@@ -201,4 +201,4 @@ int main()
 
 1. [Vim's Read Command](http://vim.wikia.com/wiki/Append_output_of_an_external_command)
 2. [Using j/k for Auto Complete List](http://stackoverflow.com/questions/4739901/scrolling-in-vim-autocomplete-box-with-jk-movement-keys)
-3. [Macros Lesson](https://www.youtube.com/watch?v=eWfBWg8bVTQ)
+[^fn]. [Macros Lesson](https://www.youtube.com/watch?v=eWfBWg8bVTQ)
