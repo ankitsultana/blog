@@ -25,6 +25,7 @@ inoremap asd <Esc>
 Some languages, in certain scenarios, require a lot of boilerplate code. For example a Sport Programmer who uses C++, needs to have certain `includes` and `defines`, before writing the `main` function. For that case, you can use Vim, so that whenever you create a new C++ file using Vim, the boilerplate code is already available.
 
 We are going to use Vim's `read`  command to achieve this [^1].
+
 [^1]: [Vim's Read Command](http://vim.wikia.com/wiki/Append_output_of_an_external_command)
 Before we start, try out the command yourself. 
 
