@@ -24,7 +24,7 @@ intro: true
 # This will be displayed in your intro
 short_bio: >
     Sophomore at BITS Pilani, competitive programmer on <a class="underline" href="http://codeforces.com/profile/bk2dcradle">Codeforces</a>,
-    developer on <a href="https://github.com/bk2dcradle">GitHub</a> and bad at introducing himself.
+    developer on <a class="underline" href="https://github.com/bk2dcradle">GitHub</a> and bad at introducing himself.
 
 permalink: /:title.html
 
