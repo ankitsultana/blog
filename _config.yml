@@ -6,7 +6,8 @@ baseurl: "/blog"
 
 # This will show up at the top of index page
 site_heading: >
-    ankit <span class="faded">'s blog</span>
+    ankit sultana
+#ankit <span class="faded">'s blog</span>
 
 email: ankitsultana@gmail.com
 author: Ankit Sultana
@@ -19,15 +20,11 @@ description: >
 copyright: ankit
 # Toggle your short bio, which will displayed on your index page
 # Just toggle it and run jekyll again to see
-intro: false
+intro: true
 # This will be displayed in your intro
 short_bio: >
-    Welcome! This is <span>accent</span>, a mobile friendly theme for Jekyll. The main feature of this
-    theme is that you can change the accent color. Refer the
-    <a class="underline different-highlight" href="http://ankitsultana.me/accent/documentation.html">
-        Documentation
-    </a>
-    to know how.
+    Sophomore at BITS Pilani, competitive programmer on <a class="underline" href="http://codeforces.com/profile/bk2dcradle">Codeforces</a>,
+    developer on <a href="https://github.com/bk2dcradle">GitHub</a> and bad at introducing himself.
 
 permalink: /:title.html
 
@@ -50,7 +47,7 @@ facebook_id: ankitsultana10
 favicon: true
 favicon_location: "images/favicon.ico"
 
-profile_picture: images/temp.png
+# profile_picture: images/temp.png
 paginate: 5
 paginate_path: "/page/:num"
 tracking_id: UA-69243698-2
