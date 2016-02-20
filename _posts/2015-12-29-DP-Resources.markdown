@@ -1,6 +1,6 @@
 ---
 ---
-*Note:* This is article is a stub of the original article which will be published probably by the first week of January 2016.
+*Note:* This is article is a <span class="capsule">stub</span> of the original article which will be published probably by the first week of January 2016.
 
 This article lays down the path, that you should follow in order to learn DP.
 
