@@ -14,7 +14,11 @@ author: Ankit Sultana
 # This description will show up in google search results
 # (for index page) etc.
 description: >
+<<<<<<< HEAD
     A sophomore at BITS Pilani, a programmer on the web.
+=======
+    accent is, as Trump would put it, the best
+>>>>>>> upstream/gh-pages
 
 # This will what will show against &copy; in the footer
 copyright: ankit
