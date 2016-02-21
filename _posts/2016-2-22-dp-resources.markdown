@@ -1,9 +1,12 @@
 ---
+title: DP Resources
 ---
+
+There is one question that I get asked more often than not.
 
 > How do I start with Dynamic Programming ?
 
-I get asked this question a lot, so I decided to write this.
+So I had to write this.
 
 This is a list that should help you get familiar with Dynamic Programming. Note that the order is important.
 
@@ -31,11 +34,7 @@ Here is a list of some easy/interesting problems on Dynamic Programming. Try to 
 
 * [ICL16D](https://www.codechef.com/problems/ICL16D)
 
-* [RENT](http://www.spoj.com/problems/RENT/)
-
 More Resources:
-
-* [Mimino on Quora](https://www.quora.com/Are-there-any-good-resources-or-tutorials-for-dynamic-programming-besides-the-TopCoder-tutorial/answer/Michal-Danil%C3%A1k?srid=nWT1&share=4b364d86)
 
 * [DP on Trees](https://threads-iiith.quora.com/Dynamic-Programming-on-Trees-Tutorial)
 
