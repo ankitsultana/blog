@@ -34,6 +34,8 @@ Here is a list of some easy/interesting problems on Dynamic Programming. Try to 
 
 * [ICL16D](https://www.codechef.com/problems/ICL16D)
 
+* [Chain Reaction: CF](http://codeforces.com/contest/608/problem/C)
+
 More Resources:
 
 * [DP on Trees](https://threads-iiith.quora.com/Dynamic-Programming-on-Trees-Tutorial)
