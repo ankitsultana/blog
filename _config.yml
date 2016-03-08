@@ -48,7 +48,7 @@ favicon: true
 favicon_location: "images/favicon.ico"
 
 # profile_picture: images/temp.png
-paginate: 5
+paginate: 20
 paginate_path: "/page/:num"
 tracking_id: UA-69243698-2
 
