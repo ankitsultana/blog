@@ -1,0 +1,79 @@
+---
+title: git notes
+---
+
+This post contains my notes while reading chapter 2 of Pro Git.
+
+### Nifty Commands
+
+
+######1. Short Status
+
+{% highlight shell %}
+$ git status --short # -s
+
+ M README           # Modified but not staged
+MM Rakefile         # Some changes staged, some not
+A  lib/git.rb       # New file added for staging
+M  lib/simplegit.rb # Modifications staged
+?? LICENSE.txt      # Untracked file
+{% endhighlight %}
+
+There are two columns to the output, first one shows the file is stages, second
+shows the file is modified.
+
+######2. Ignoring files
+
+git uses [Blob Patterns](http://ankitsultana/me) in it's `.gitignore` files.
+Some important rules you should know are explained through examples below:
+
+{% highlight shell %}
+$ cat .gitignore
+
+# Start with / to avoid recursivity
+/TODO    # Ignore TODO file only in the current dir not in subdir/TODO
+
+*.out    # Ignore all files that end with .out
+# Say you don't want to ignore a file that ends with out
+!somename.out # Don't ignore somename.out
+
+# Ignore doc/notes.txt but not doc/server/arch.txt
+doc/*.txt
+
+# Ignore all pdf files in directory doc
+doc/**/*.pdf
+
+{% endhighlight %}
+
+######3. Diff
+
+Again I will let the code do the talking:
+
+{% highlight shell %}
+$ git diff  # Compare b/w working directory and staging area
+
+$ git diff --staged  # Compare b/w staging area and last commit
+{% endhighlight %}
+
+One noteworthy point is that `--cached` and `--staged` are synonyms. (as
+mentioned in git help, which can be invoked by executing `git help diff`)
+
+**Note:** that `git diff` won't show you untracked files.
+
+######4. Removing/Unstaging Files
+
+Okay so quickly:
+
+{% highlight shell %}
+$ git rm filename.txt # removes the file from your working tree, and also stages its deletion.
+$ git rm --cached filename.txt # stages the deletion, leaves file in working tree
+$ git reset filename.txt # Unstages any staged changes for given file
+{% endhighlight %}
+
+**Warning:** Use a `\` before you use the wild card character `*` since git
+does its own filename expansion in addition to the shell's. So if you want to
+remove all `.log` files from the `log/` directory, do:
+
+{% highlight shell %}
+$ git rm log/\*.log
+{% endhighlight %}
