@@ -77,3 +77,71 @@ remove all `.log` files from the `log/` directory, do:
 {% highlight shell %}
 $ git rm log/\*.log
 {% endhighlight %}
+######5. Git Log
+
+`git log` lists the list of commits in reverse chronological order. There are a
+number of options to it:
+
+{% highlight shell %}
+$ git log -p -2  # -p for the difference introduced, -2 => the last two commits
+
+$ git --stat     # Abbreviated stats
+
+$ git log --pretty=oneline
+{% endhighlight %}
+
+######6. Amend
+
+Sometime you commit a bit too early, and then realize that you could have added
+another file in the previous commit. You can use `git commit --ammend` for that:
+
+{% highlight shell %}
+$ git commit --ammend
+{% endhighlight %}
+
+Essentialy, it overwrites the previous commit with a commit that contains the
+changes of the previous commit and the currently staged files.
+
+**Note:** Never amend commits that have been pushed to a public repo.
+
+######7. Unstaging Files
+
+Use:
+
+{% highlight shell %}
+$ git reset HEAD filename
+{% endhighlight %}
+
+to unstage a file
+
+######8. Unmodifying a modified file
+
+Say you commit a file `abc.html`. Now you made some changes to it. If you want
+to revert back to the state it was in after the last commit, do:
+
+{% highlight shell %}
+$ git checkout -- abc.html
+{% endhighlight %}
+
+**Note:** Once you use `checkout` in this way, all the changes you had undone
+are gone
+
+
+### Working with remotes
+
+Let's start with some commands:
+
+{% highlight shell %}
+# Add a remote
+$ git remote add shortname url
+
+# Fetch from a remote
+$ git fetch shortname
+# Now you have shortname's branches available at
+# shortname/branchname
+# You can either merge your branch with any of
+# them or you can checkout them for inspection.
+{% endhighlight %}
+
+`git pull` fetches data from the remote tracking branch and merges into your
+current branch
