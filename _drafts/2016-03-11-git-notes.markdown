@@ -145,3 +145,6 @@ $ git fetch shortname
 
 `git pull` fetches data from the remote tracking branch and merges into your
 current branch
+
+
+TODO: Revert uncommited changes: http://stackoverflow.com/questions/5807137/git-how-to-revert-uncommitted-changes-including-files-and-folders
