@@ -30,3 +30,17 @@ algorithms:
     color: '#949667'
     description: >
         them so good
+
+python:
+    name: Python
+    image: #
+    color: '#376D9C'
+    description: >
+        Not Monty's Python
+
+shell:
+    name: Shell
+    image: #
+    color: '#303030'
+    description: >
+        For the badasses
