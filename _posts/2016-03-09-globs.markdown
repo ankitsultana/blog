@@ -4,7 +4,7 @@ layout: post
 tags: [shell, miscellaneous]
 ---
 
-According to wikipedia, glob patterns specify sets of filenames with wild card
+According to wikipedia, glob patterns specifies sets of filenames with wild card
 characters.
 
 <p class="lead">But what the heck is a wild card character ?</p>
@@ -23,7 +23,7 @@ The character `*` has a special name, **Kleene Star**.
 So we know what is a wild card character, we know what is a regex (regular
 expression), now coming back to the first definition on this page:
 
-> A Glob Pattern specify sets of filenames with wild card characters.
+> A Glob Pattern specifies sets of filenames with wild card characters.
 
 Examples of Glob Patterns in shell are:
 
