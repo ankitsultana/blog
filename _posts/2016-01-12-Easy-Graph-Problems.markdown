@@ -1,4 +1,6 @@
 ---
+layout: post
+tags: [sport-programming, algorithms]
 ---
 
 This is a list of problems for beginners.

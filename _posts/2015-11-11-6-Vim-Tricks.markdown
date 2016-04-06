@@ -1,4 +1,5 @@
 ---
+layout: post
 ---
 This post is intended to be a collection of "hacks", "tricks" or whatever one might wanna call them, for users who are relatively new to Vim. The idea is for a newbie to realize the potential and extent of customizability that Vim has to offer.
 

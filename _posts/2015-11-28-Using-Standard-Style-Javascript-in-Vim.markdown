@@ -1,4 +1,5 @@
 ---
+layout: post
 ---
 If you have switched to [Standard](http://github.com/feross/standard) style Javascript and you use Vim, just put these lines in your `vimrc`
 

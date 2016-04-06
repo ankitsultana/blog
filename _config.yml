@@ -1,91 +1,31 @@
-# User Settings | Edit there as per required
+# Permalinks
+permalink:        pretty
 
-title: ankit sultana
-url: "http://ankitsultana.me"
-baseurl: "/blog"
+# Setup
+url:              http://ankitsultana.me
 
-# This will show up at the top of index page
-site_heading: >
-    ankit sultana
-#ankit <span class="faded">'s blog</span>
+# Set to '' in case of hosting on `http://<your-github-name>.github.io`
+baseurl:          /blog
 
-email: ankitsultana@gmail.com
-author: Ankit Sultana
-# This description will show up in google search results
-# (for index page) etc.
-description: >
-    A sophomore at BITS Pilani, a programmer on the web.
+title:            Convoluted Ramblings
 
-# This will what will show against &copy; in the footer
-copyright: ankit
-# Toggle your short bio, which will displayed on your index page
-# Just toggle it and run jekyll again to see
-intro: true
-# This will be displayed in your intro
-short_bio: >
-    Sophomore at BITS Pilani, competitive programmer on <a class="underline" href="http://codeforces.com/profile/bk2dcradle">Codeforces</a>,
-    developer on <a class="underline" href="https://github.com/bk2dcradle">GitHub</a> and bad at introducing himself.
+# Markdown enabled, however don't use more than one paragraph (enforced by `>`)
+description:      >
+    An awesome programmer at BITS Pilani
 
-permalink: /:title.html
+# The tags listed as entries in the sidebar
+sidebar_tags:     [vim, git, algorithms]
 
-# Comments are powered by disqus
-comments: true
+# Fallback image and color if not overwritten for tag or post
+image:            http://qwtel.com/hydejack/public/img/nap.jpg
+color:            '#A85641'
 
-# keep about_stub roughly 12 words long for best results
-# This will show up at the bottom of each post
-# Note that about_footer should be true if you want
-# to see author information at the bottom of each post
-about_stub: >
-    A sophomore at BITS Pilani, a programmer on the web.
+author:
+  name:           'Ankit Sultana'
+  twitter:        AnkitSultana
+  github:         bk2dcradle
+  photo:          # http://qwtel.com/public/img/flo.jpg
 
-about_footer: true
-
-twitter_username: AnkitSultana
-github_username: bk2dcradle
-facebook_id: ankitsultana10
-
-favicon: true
-favicon_location: "images/favicon.ico"
-
-# profile_picture: images/temp.png
-paginate: 20
-paginate_path: "/page/:num"
-tracking_id: UA-69243698-2
-
-# Social Stuff | open graph and twitter cards
-og_image: "images/accent.png" # This will show in facebook thumbnails
-twitter_image: "http://ankitsultana.me/images/accent.png?1234" # This will show in twitter cards
-
-####################################
-####################################
-####################################
-### Build Settings | Don't Touch ###
-####################################
-####################################
-####################################
-
-markdown: kramdown
-
-gems:
-    - jekyll-paginate
-
-sass:
-    style: compressed
-    sass_dir: _sass
-
-# Scopes
-defaults:
-    -
-        scope:
-            path:   ""
-            type:   "pages"
-        values:
-            layout: "page"
-    -
-        scope:
-            path:   ""
-            type:   "posts"
-        values:
-            layout: "post"
-
-exclude: [vendor] # For travis ci
+  # Markdown enabled, can use multiple paragraphs (enabled by `|`)
+  about:          |
+      A sophomore at BITS Pilani, a programmer on the web

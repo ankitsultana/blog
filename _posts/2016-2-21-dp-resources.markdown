@@ -1,5 +1,7 @@
 ---
 title: DP Resources
+layout: post
+tags: [algorithms]
 ---
 
 There is one question that I get asked more often than not.

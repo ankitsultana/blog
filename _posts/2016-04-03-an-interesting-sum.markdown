@@ -1,5 +1,7 @@
 ---
 title: An interesting sum
+layout: post
+tags: [math, algorithms, sport-programming]
 ---
 
 Consider the following sum:
