@@ -4,7 +4,7 @@ layout: post
 tags: [shell, miscellaneous]
 ---
 
-According to wikipedia, glob patterns specifies sets of filenames with wild card
+According to wikipedia, glob patterns specify sets of filenames with wild card
 characters.
 
 <p class="lead">But what the heck is a wild card character ?</p>
