@@ -58,3 +58,10 @@ sport-programming:
     color: '#A43838'
     description: >
         For Fun
+
+miscellaneous:
+    name: Miscellaneous
+    image: #
+    color: '#303030'
+    description: >
+        Random spitballing
