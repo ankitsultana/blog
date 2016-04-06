@@ -1,7 +1,7 @@
 ---
 title: An interesting sum
 layout: post
-tags: [math, algorithms, sport-programming]
+tags: [math, algorithms]
 ---
 
 Consider the following sum:

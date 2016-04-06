@@ -1,5 +1,5 @@
 ---
-Title: Fun with Python
+title: Fun with Python
 layout: post
 tags: [python]
 ---

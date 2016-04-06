@@ -20,7 +20,7 @@ git:
 vim:
     name: vim
     image: https://ankitsultana.me/blog/public/img/vim-session-example.png
-    color: '#949667'
+    color: '#21252B'
     description: >
         vim is for winners
 
@@ -32,21 +32,21 @@ algorithms:
         them so good
 
 python:
-    name: Python
+    name: python
     image: #
     color: '#376D9C'
     description: >
         Not Monty's Python
 
 shell:
-    name: Shell
+    name: shell
     image: #
     color: '#303030'
     description: >
         For the badasses
 
 math:
-    name: Math
+    name: math
     image: #
     color: '#F4B764'
     description: >
@@ -60,7 +60,7 @@ sport-programming:
         For Fun
 
 miscellaneous:
-    name: Miscellaneous
+    name: miscellaneous
     image: #
     color: '#303030'
     description: >
