@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [sport-programming, algorithms]
+tags: [algorithms]
 ---
 
 This is a list of problems for beginners.
