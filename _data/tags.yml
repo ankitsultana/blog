@@ -44,3 +44,17 @@ shell:
     color: '#303030'
     description: >
         For the badasses
+
+math:
+    name: Math
+    image: #
+    color: '#F4B764'
+    description: >
+        Language of Science
+
+sport-programming:
+    name: Sport Programming
+    image: #
+    color: '#A43838'
+    description: >
+        For Fun
