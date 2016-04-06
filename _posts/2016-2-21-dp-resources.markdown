@@ -1,7 +1,7 @@
 ---
 title: DP Resources
 layout: post
-tags: [algorithms]
+tags: [algorithms, sport-programming]
 ---
 
 There is one question that I get asked more often than not.

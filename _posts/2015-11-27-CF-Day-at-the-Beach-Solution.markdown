@@ -1,5 +1,6 @@
 ---
 layout: post
+tags: [algorithms, sport-programming]
 ---
 Problem Statement: [CF Link](http://codeforces.com/contest/599/problem/C)
 
