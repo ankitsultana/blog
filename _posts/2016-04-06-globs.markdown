@@ -18,7 +18,7 @@ Actually speaking about regex, as you might know `.*` is used to match any
 number of arbitrary characters, which may be different, since `.` stands for *match any character* and
 `*` stands for *match any number of* the preceding character.
 
-The character `*` has a special name, **Kleene Star**.
+The character `*` in this context, has a special name, **Kleene Star**.
 
 So we know what is a wild card character, we know what is a regex (regular
 expression), now coming back to the first definition on this page:
@@ -43,8 +43,7 @@ Wildcard in Glob  |   Equivalent Regex
 
 So say, for some reason, you are in a directory which has only markdown files,
 and you want to list all files that have numeric names like `1234.md`. In regex
-you could simply do `[0-9]*.md`, but you can't do that in globs since they lack
-*Kleene Star*.
+you could simply do `[0-9]+.md`, but you can't do that in globs
 
 Notably, glob patterns are also used in git. You might use them frequently when
 you are specifying a `.gitignore` file for your project.
