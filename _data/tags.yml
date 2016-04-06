@@ -19,7 +19,7 @@ git:
 
 vim:
     name: vim
-    image: #
+    image: https://ankitsultana.me/blog/public/img/vim-session-example.png
     color: '#949667'
     description: >
         vim is for winners
