@@ -1,5 +1,7 @@
 ---
 Title: Fun with Python
+layout: post
+tags: [python]
 ---
 
 I have recently been reading up on OOP realization in Python, and along the

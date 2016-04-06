@@ -1,5 +1,7 @@
 ---
 title: Glob Patterns
+layout: post
+tags: [shell, miscellaneous]
 ---
 
 According to wikipedia, glob patterns specify sets of filenames with wild card

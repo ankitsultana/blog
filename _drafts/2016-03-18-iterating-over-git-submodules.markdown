@@ -1,4 +1,6 @@
 ---
+layout: post
+tags: [git]
 ---
 
 So I was working on my [dotfiles](https://github.com/bk2dcradle/dotfiles)

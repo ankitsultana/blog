@@ -1,5 +1,7 @@
 ---
 title: git notes
+layout: post
+tags: [git]
 ---
 
 This post contains my notes while reading chapter 2 of Pro Git.
