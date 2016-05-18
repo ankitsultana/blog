@@ -103,7 +103,7 @@ Expected Complexity is $$O(log_2(n))$$ per query
 
 `U i x`   Set the value of $$a_i$$ to `x`
 
-`Q x y`   Find the maximum sum $$a_i + a_j$$ where $$x \le i \le j \le y$$
+`Q x y`   Find the maximum sum $$a_i + a_j$$ where $$x \le i \lt j \le y$$
 
 **Link:** [KGSS \| SPOJ](http://spoj.com/problems/KGSS)
 
