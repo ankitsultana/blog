@@ -121,6 +121,8 @@ Expected Complexity is $$O(log_2(n))$$ per query
 
 All operations should be $$O(log_2(n))$$
 
+**Link:** [ORDERSET \| SPOJ](http://spoj.com/problems/ORDERSET)
+
 ---
 
 **Note:** I realize that some of the questions don't have Problem Links yet, I will try to add them ASAP
