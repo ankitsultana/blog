@@ -105,6 +105,8 @@ Expected Complexity is $$O(log_2(n))$$ per query
 
 `Q x y`   Find the maximum sum $$a_i + a_j$$ where $$x \le i \le j \le y$$
 
+**Link:** [KGSS \| SPOJ](http://spoj.com/problems/KGSS)
+
 ---
 
 **Problem 9:** You have to maintain a dynamic set `S` with the following operations
