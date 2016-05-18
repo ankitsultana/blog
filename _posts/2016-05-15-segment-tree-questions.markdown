@@ -125,4 +125,12 @@ All operations should be $$O(log_2(n))$$
 
 ---
 
+**Problem 10:** Given an array of $$N$$ integers, and queries of the form
+
+`l r` Find number of distinct integers in range `l r`
+
+**Link:** [1188 \| LightOJ](http://lightoj.com/volume_showproblem.php?problem=1188)
+
+---
+
 **Note:** I realize that some of the questions don't have Problem Links yet, I will try to add them ASAP
