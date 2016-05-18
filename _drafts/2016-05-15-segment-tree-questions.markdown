@@ -65,6 +65,8 @@ Expected Complexity is $$O(log_2(n))$$
 
 Expected Complexity is still $$O(log_2(n))$$
 
+**Link:** [GSS3 \| SPOJ](http://www.spoj.com/problems/GSS3/)
+
 ---
 
 **Problem 6:** Given an array of $$N$$ integers, and queries of types
