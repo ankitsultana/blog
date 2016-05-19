@@ -36,7 +36,7 @@ Queries should be $$O(log_2(n))$$
 
 `3 i j` Return the sum of all elements in range `i j`
 
-**Link:** [1112 - Curious Robin Hood | LightOJ](http://www.lightoj.com/volume_showproblem.php?problem=1112)
+**Link:** [1112 - Curious Robin Hood \| LightOJ](http://www.lightoj.com/volume_showproblem.php?problem=1112)
 
 ---
 
