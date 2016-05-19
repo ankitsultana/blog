@@ -14,7 +14,7 @@ This is a list of some standard segment tree questions and links to correspondin
 
 Queries should be $$O(log_2(n))$$
 
-**Links:** [RPLN \| SPOJ](http://www.spoj.com/problems/RPLN/) [1082 \| LightOJ](http://lightoj.com/volume_showproblem.php?problem=1082)
+**Links:** [RPLN \| SPOJ](http://www.spoj.com/problems/RPLN/), [1082 - Array Queries \| LightOJ](http://lightoj.com/volume_showproblem.php?problem=1082)
 
 ---
 
@@ -28,7 +28,19 @@ Queries should be $$O(log_2(n))$$
 
 ---
 
-**Problem 3:** Given an array of $$N$$ integers, and queries of two types
+**Problem 3:** Given an array of $$N$$ integers, and queries of type
+
+`1 i` Make the $$i^{th}$$ element zero
+
+`2 i v` Add `v` to the $$i^{th}$$ element
+
+`3 i j` Return the sum of all elements in range `i j`
+
+**Link:** [1112 - Curious Robin Hood | LightOJ](http://www.lightoj.com/volume_showproblem.php?problem=1112)
+
+---
+
+**Problem 4:** Given an array of $$N$$ integers, and queries of two types
 
 `1 l r x`  Add x to all elements of range l and r
 
@@ -43,7 +55,7 @@ Both operations should be $$O(log_2(n))$$
 
 ---
 
-**Problem 4:** Given an array of $$N$$ integers, and queries of type
+**Problem 5:** Given an array of $$N$$ integers, and queries of type
 
 `l r`  Output the maximum contiguous subarray sum, formally return
 
@@ -59,7 +71,7 @@ Expected Complexity is $$O(log_2(n))$$
 
 ---
 
-**Problem 5:** Same as the previous one, but with one more type of query
+**Problem 6:** Same as the previous one, but with one more type of query
 
 `x y` Set the $$x^{th}$$ element of the array to `y`
 
@@ -69,7 +81,7 @@ Expected Complexity is still $$O(log_2(n))$$
 
 ---
 
-**Problem 6:** Given an array of $$N$$ integers, and queries of types
+**Problem 7:** Given an array of $$N$$ integers, and queries of types
 
 `k`  Find $$k^{th}$$ element of array if this array was sorted
 
@@ -79,7 +91,7 @@ Either of complexities $$O(log_2(n))$$ or $$O(log_2^2(n))$$ will do
 
 ---
 
-**Problem 7:** Given an array of $$N$$ integers, and queries of type
+**Problem 8:** Given an array of $$N$$ integers, and queries of type
 
 `p` Find the elements with indices $$i$$ and $$j$$ such that
 
@@ -95,11 +107,11 @@ $$
 
 Expected Complexity is $$O(log_2(n))$$ per query
 
-**Link:** [Histogram \| LightOJ](http://lightoj.com/volume_showproblem.php?problem=1083)
+**Link:** [1083 - Histogram \| LightOJ](http://lightoj.com/volume_showproblem.php?problem=1083)
 
 ---
 
-**Problem 8:** Given an array of $$N$$ integers, and queries of types
+**Problem 9:** Given an array of $$N$$ integers, and queries of types
 
 `U i x`   Set the value of $$a_i$$ to `x`
 
@@ -109,7 +121,7 @@ Expected Complexity is $$O(log_2(n))$$ per query
 
 ---
 
-**Problem 9:** You have to maintain a dynamic set `S` with the following operations
+**Problem 10:** You have to maintain a dynamic set `S` with the following operations
 
 `INSERT(S, x)`   Insert `x` in `S` if it is not already present
 
@@ -125,11 +137,11 @@ All operations should be $$O(log_2(n))$$
 
 ---
 
-**Problem 10:** Given an array of $$N$$ integers, and queries of the form
+**Problem 11:** Given an array of $$N$$ integers, and queries of the form
 
 `l r` Find number of distinct integers in range `l r`
 
-**Link:** [1188 \| LightOJ](http://lightoj.com/volume_showproblem.php?problem=1188)
+**Link:** [1188 - Fast Queries \| LightOJ](http://lightoj.com/volume_showproblem.php?problem=1188)
 
 ---
 
