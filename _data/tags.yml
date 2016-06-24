@@ -10,6 +10,14 @@
 #   description: >
 #     *My Tag* is an example of how to define a custom tag.
 # ~~~
+
+cpp:
+    name: cpp
+    image: #
+    color: '#949667'
+    description: >
+        blah
+
 git:
     name: git
     image: #
