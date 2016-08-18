@@ -149,3 +149,60 @@ Similarly we take unvisited vertices on the left because their matched vertex on
 was not taken, so to cover their matched edge, we take the unvisited vertex on the left.
 
 ---
+
+> **Problem 5:** Given a bipartite graph, where each node has some associated weight, find
+>                the minimum vertex cover.
+
+**Solution:**
+
+Build a graph, with one partite on left side, and the other on the right side.
+
+Add an edge between every edge on the left and every edge on the right, with capacity equal
+to the associated weight of the node on the left side.
+
+Similarly, add an edge between every node on the right side and the sink, with capacity equal
+to the associated weigth of the node on the right side.
+
+Now for every edge in the original graph, add an edge from the left to the right, with
+an infinite capacity.
+
+Now consider any path which goes from source - some node of left side - some node of right side - sink.
+
+Now let's see what does minimum cut mean.
+
+We need to disconnect source and sink, so we can either of the following three edges:
+
+First say the sink is $$s$$, sink is $$t$$ and the node on the left is $$l$$ and the one on the right
+is $$r$$
+
+1. $$(s, l)$$
+2. $$(l, r)$$
+3. $$(r, t)$$
+
+We will definitely not cut edge 2, because that has infinite capacity.
+
+So we will either cut 1 or 3.
+
+Here is the key idea:
+
+Cutting edge 1 means that $$l$$ is in $$VC_{min}$$
+
+Cutting edge 3 means that $$r$$ is in $$VC_{min}$$
+
+Note that not cutting edge 2 means that at least one of $$l$$ or $$r$$ must be in $$VC_{min}$$
+
+And cutting exactly one of 1 or 3 means that exactly one of $$l$$ or $$r$$ must be in $$VC_{min}$$
+
+Since for every node $$l$$ on the left, there is exactly one edge connecting $$(s, l)$$, implies
+that we will include every node on the left exactly once (if we cut $$(s, l)$$) in $$VC_{min}$$.
+
+Same argument can be given for the nodes on the right.
+
+Now let's confirm that such a cut and the resulting the set of vertices is in fact a vertex cover.
+
+Assume that there exists a edge $$E$$ between some $$l$$ and $$r$$ such that $$E$$ is not covered.
+
+Then, both of the edges, $$(s, l)$$ and $$(r, t)$$ must *NOT* be cut.
+
+But then there exists a path between $$s$$ and $$t$$, which is a contradiction to our definition
+of an $$S$$ $$T$$ cut.
