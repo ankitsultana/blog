@@ -62,4 +62,4 @@ For DFS and BFS, you can try problems from [here](https://ankitsultana.me/blog/2
 
 ###### 1. [Awesome CP](https://github.com/lnishan/awesome-competitive-programming)
 
-###### 2. [Codechef Discuss](discuss.codechef.com/questions/48877/data-structures-and-algorithms)
+###### 2. [Codechef Discuss](http://discuss.codechef.com/questions/48877/data-structures-and-algorithms)
