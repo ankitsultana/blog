@@ -23,3 +23,8 @@ This is a list of problems for beginners.
 ### Union Find (DSU)
 
 1. [PT07Y](http://www.spoj.com/problems/PT07Y/)
+2. [101 Hack April 2016](https://www.hackerrank.com/contests/101hack36/challenges/maximum-cost-queries)
+
+### More Resources
+
+1. [LightOJ DFS/BFS](http://lightoj.com/volume_problemcategory.php?user_id=26597&category=Breadth%20First%20Search/Depth%20First%20Search)

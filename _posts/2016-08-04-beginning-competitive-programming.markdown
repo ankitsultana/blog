@@ -41,8 +41,9 @@ or look at the editorial (in case of Codeforces).
 I wouldn't recommend spending more than 40-60 minutes on a problem.
 
 Also start Codechef's long contests. The first 2/3 problems are generally easy enough that a beginner
-can solve them. You can also try upsolving the problems that you were not able to solve during
-the contest (Solving a problem after the contest has ended, either by referring the editorial or otherwise).
+can solve them. You can also try upsolving (solving a problem after the contest has ended,
+either by referring the editorial or otherwise) the problems that you were not able to solve during
+the contest.
 
 Also get familiar with C++'s [map](http://www.cplusplus.com/reference/map/map/map/), [set](http://www.cplusplus.com/reference/set/set/set/) and [vector](http://www.cplusplus.com/reference/vector/vector/vector/).
 
@@ -55,11 +56,21 @@ I'd recommend you the following:
 1. Sieve of Eratosthenes
 2. Depth First Search (DFS)
 3. Breadth First Search (BFS)
+4. Binary Search
+5. Dynamic Programming (DP)
 
-For DFS and BFS, you can try problems from [here](https://ankitsultana.me/blog/2016/01/12/Easy-Graph-Problems/)
+For DFS and BFS, you can try problems from [here](http://ankitsultana.me/blog/2016/01/12/Easy-Graph-Problems/)
+
+For Binary Search, you can find links to problems and tutorial [here](https://github.com/bk2dcradle/cpsig/tree/master/binary_search)
 
 ### Resources
 
 ###### 1. [Awesome CP](https://github.com/lnishan/awesome-competitive-programming)
 
 ###### 2. [Codechef Discuss](http://discuss.codechef.com/questions/48877/data-structures-and-algorithms)
+
+###### 3. [Binary Search Problems + Tutorial](https://github.com/bk2dcradle/cpsig/tree/master/binary_search)
+
+###### 4. [DFS/BFS Resources](http://ankitsultana.me/blog/2016/01/12/Easy-Graph-Problems/)
+
+###### 5. [DP Resources](http://ankitsultana.me/blog/2016/02/21/dp-resources/)
