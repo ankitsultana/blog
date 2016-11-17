@@ -206,3 +206,7 @@ Then, both of the edges, $$(s, l)$$ and $$(r, t)$$ must *NOT* be cut.
 
 But then there exists a path between $$s$$ and $$t$$, which is a contradiction to our definition
 of an $$S$$ $$T$$ cut.
+
+---
+
+TODO: Find min-cut edges
