@@ -47,6 +47,16 @@ the contest.
 
 Also get familiar with C++'s [map](http://www.cplusplus.com/reference/map/map/map/), [set](http://www.cplusplus.com/reference/set/set/set/) and [vector](http://www.cplusplus.com/reference/vector/vector/vector/).
 
+Read [this](https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-c-with-the-standard-template-library-part-1/) article for learning a bit about C++ STL
+
+Here are some problems which use C++ STL,
+[KJCP03](https://www.codechef.com/problems/KJCP3),
+[KJCP01](https://www.codechef.com/problems/KJCP01),
+[KJCP02](https://www.codechef.com/problems/KJCP02),
+[SBANK](http://www.spoj.com/problems/SBANK),
+[ACPC11B](http://www.spoj.com/problems/ACPC11B/)
+
+
 ###### Stage 2 | Learning Basic Algorithms
 
 Now that you are familiar with the environment, time to learn some basic algorithms.
@@ -59,9 +69,13 @@ I'd recommend you the following:
 4. Binary Search
 5. Dynamic Programming (DP)
 
+You can find tutorials for most of these by googling online.
+
 For DFS and BFS, you can try problems from [here](http://ankitsultana.me/blog/2016/01/12/Easy-Graph-Problems/)
 
 For Binary Search, you can find links to problems and tutorial [here](https://github.com/bk2dcradle/cpsig/tree/master/binary_search)
+
+I wrote another post telling how to go about learning DP. You can find it [here](http://ankitsultana.me/blog/2016/02/21/dp-resources/)
 
 ### Resources
 
