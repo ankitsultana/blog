@@ -26,7 +26,7 @@ shows the file is modified.
 
 ######2. Ignoring files
 
-git uses [Blob Patterns](http://ankitsultana/me) in it's `.gitignore` files.
+git uses [Glob Patterns](http://ankitsultana.com) in it's `.gitignore` files.
 Some important rules you should know are explained through examples below:
 
 {% highlight shell %}

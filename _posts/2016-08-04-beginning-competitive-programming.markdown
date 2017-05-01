@@ -71,11 +71,11 @@ I'd recommend you the following:
 
 You can find tutorials for most of these by googling online.
 
-For DFS and BFS, you can try problems from [here](http://ankitsultana.me/blog/2016/01/12/Easy-Graph-Problems/)
+For DFS and BFS, you can try problems from [here](http://ankitsultana.com/blog/2016/01/12/Easy-Graph-Problems/)
 
 For Binary Search, you can find links to problems and tutorial [here](https://github.com/bk2dcradle/cpsig/tree/master/binary_search)
 
-I wrote another post telling how to go about learning DP. You can find it [here](http://ankitsultana.me/blog/2016/02/21/dp-resources/)
+I wrote another post telling how to go about learning DP. You can find it [here](http://ankitsultana.com/blog/2016/02/21/dp-resources/)
 
 ### Resources
 
@@ -85,6 +85,6 @@ I wrote another post telling how to go about learning DP. You can find it [here]
 
 ###### 3. [Binary Search Problems + Tutorial](https://github.com/bk2dcradle/cpsig/tree/master/binary_search)
 
-###### 4. [DFS/BFS Resources](http://ankitsultana.me/blog/2016/01/12/Easy-Graph-Problems/)
+###### 4. [DFS/BFS Resources](http://ankitsultana.com/blog/2016/01/12/Easy-Graph-Problems/)
 
-###### 5. [DP Resources](http://ankitsultana.me/blog/2016/02/21/dp-resources/)
+###### 5. [DP Resources](http://ankitsultana.com/blog/2016/02/21/dp-resources/)
