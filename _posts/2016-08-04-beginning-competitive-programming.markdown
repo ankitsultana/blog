@@ -4,8 +4,6 @@ layout: post
 tags: [algorithms]
 ---
 
-> This is a work in progress. The author is really lazy, so updates might take weeks to come.
-
 I have been asked a lot on how to get started with competitive programming, so I decided to write
 this post, so I could point to this post whenever anyone asks me the same question again.
 
