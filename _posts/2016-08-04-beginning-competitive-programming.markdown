@@ -38,7 +38,8 @@ You can also try this [list](https://raw.githubusercontent.com/bk2dcradle/algori
 For every problem, if you are not able to solve it, search online for solutions (in case of SPOJ)
 or look at the editorial (in case of Codeforces).
 
-I wouldn't recommend spending more than 40-60 minutes on a problem.
+For every problem, you should spend somewhere around 40-60 minutes thinking about the solution,
+and another 40-60 minutes coding it.
 
 Also start Codechef's long contests. The first 2/3 problems are generally easy enough that a beginner
 can solve them. You can also try upsolving (solving a problem after the contest has ended,
@@ -48,6 +49,7 @@ the contest.
 Also get familiar with C++'s [map](http://www.cplusplus.com/reference/map/map/map/), [set](http://www.cplusplus.com/reference/set/set/set/) and [vector](http://www.cplusplus.com/reference/vector/vector/vector/).
 
 Read [this](https://www.topcoder.com/community/data-science/data-science-tutorials/power-up-c-with-the-standard-template-library-part-1/) article for learning a bit about C++ STL
+(Standard Template Library).
 
 Here are some problems which use C++ STL,
 [KJCP03](https://www.codechef.com/problems/KJCP3),
