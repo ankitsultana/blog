@@ -17,7 +17,7 @@ description:      >
 sidebar_tags:     [vim, git, algorithms]
 
 # Fallback image and color if not overwritten for tag or post
-image:            https://raw.githubusercontent.com/bk2dcradle/blog/gh-pages/public/img/belakor.jpg
+#image:            https://raw.githubusercontent.com/bk2dcradle/blog/gh-pages/public/img/belakor.jpg
 color:            '#A85641'
 
 author:
