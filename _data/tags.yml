@@ -16,56 +16,56 @@ cpp:
     image: #
     color: '#949667'
     description: >
-        blah
+        cpp
 
 git:
     name: git
     image: #
     color: '#949667'
     description: >
-        git is awesome
+        git
 
 vim:
     name: vim
     image: https://ankitsultana.com/blog/public/img/vim-session-example.png
     color: '#21252B'
     description: >
-        vim is for winners
+        vim
 
 algorithms:
     name: algorithms
     image: #
     color: '#949667'
     description: >
-        them so good
+        Algos
 
 python:
     name: python
     image: #
     color: '#376D9C'
     description: >
-        Not Monty's Python
+        Python
 
 shell:
     name: shell
     image: #
     color: '#303030'
     description: >
-        For the badasses
+        Shell
 
 math:
     name: math
     image: #
     color: '#F4B764'
     description: >
-        Language of Science
+        Math
 
 sport-programming:
     name: Sport Programming
     image: #
     color: '#A43838'
     description: >
-        For Fun
+        aka Algorithmic Programming
 
 miscellaneous:
     name: miscellaneous
