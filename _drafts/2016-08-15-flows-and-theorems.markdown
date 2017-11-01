@@ -34,6 +34,15 @@ Can be proven using theorem 1.
 
 ---
 
+> **Theorem 2:** For a given network with integral capacities, there always
+> exists a maximum flow such that flow pushed along every edge is an integer.
+
+**Proof:**
+
+Omitted as available online
+
+---
+
 > **Problem 1:** Given a bipartite graph $$G(V, E)$$, how to find the size of minimum
 >                vertex cover?
 
@@ -209,4 +218,44 @@ of an $$S$$ $$T$$ cut.
 
 ---
 
-TODO: Find min-cut edges
+> **Problem 6:** Given a partially ordered set, find minimum size of partition or maximum anti chain
+
+**Solution:**
+
+Note that sizes of both of these will be the same by Dilworth's theorem.
+
+I highly recommend that you try and figure out how to find the minimum partition or maximum anti chain
+on your own.
+
+The key observation is that every matching corresponds to a partition. And size of a partition is
+
+$$
+
+|V| - |M|
+
+$$
+
+For an input DAG $$G(V, E)$$, create a graph with a left partite consisting of vertices from $$V$$ and
+create an identical right partite. For every edge $$(a, b)$$, add an edge from $$a$$ in the left
+partite to $$b$$ in the right partite.
+
+Add edges from source to all vertices in the left partite, and similarly for vertices in the right partite
+and the sink. All capacities should be 1.
+
+The maximum anti chain consists of all elements that are not present in the minimum vertex cover.
+
+To understand this, realize that the complement of a vertex cover in the modified graph will represent
+an anti chain.
+
+Note that you can also add weights to vertices, and the arguments will still hold.
+
+---
+
+> **Problem 7:** Given a DAG such that every vertex has a positive weight,
+> find a subset $$S$$ of vertices with maximum weight such that for any edge $$(u, v)$$, the following holds
+> $$u \in S \implies v \in S$$.
+
+**Solution:**
+
+This problem is also known as [Maximum Weight Closure](https://en.wikipedia.org/wiki/Closure_problem#Reduction_to_maximum_flow) Problem.
+To understand how to create the graph, refer wikipedia.
