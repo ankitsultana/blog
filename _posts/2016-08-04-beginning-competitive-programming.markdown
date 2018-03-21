@@ -4,6 +4,10 @@ layout: post
 tags: [algorithms]
 ---
 
+**Note:** Post updated on 21 March, 2018
+
+---
+
 I have been asked a lot on how to get started with competitive programming, so I decided to write
 this post, so I could point to this post whenever anyone asks me the same question again.
 
@@ -18,7 +22,7 @@ But since C++ is used by the majority of competitive programmers, I'd recommend 
 
 ### How to Begin
 
-What follows is my personal opinion.
+What follows is my personal opinion (per se).
 
 ###### Stage 1 | Getting Familiar
 
@@ -28,7 +32,7 @@ and work on being able to quickly convert rudimentary ideas to code.
 For that, I would recommend doing Codeforces Division 2 Contests' A problems. Do like 10-20 of these,
 till you can solve them in less than 15 minutes on average.
 
-Note that for doing some of these, you may have to learn some basic things like calculating
+Note that for doing some of these, you may have to learn some basic concepts like calculating
 gcd/lcm etc.
 
 You can also try this [list](https://raw.githubusercontent.com/bk2dcradle/algorithms-practice/master/Problems-Level-1.txt) of easy problems on SPOJ I made a long time ago.
@@ -56,6 +60,8 @@ Here are some problems which use C++ STL,
 [SBANK](http://www.spoj.com/problems/SBANK),
 [ACPC11B](http://www.spoj.com/problems/ACPC11B/)
 
+Moreover, make sure you know what Asymptotic Complexity means, and how we can estimate
+the time a given piece of code will take.
 
 ###### Stage 2 | Learning Basic Algorithms
 
@@ -76,6 +82,18 @@ For DFS and BFS, you can try problems from [here](http://ankitsultana.com/blog/2
 For Binary Search, you can find links to problems and tutorial [here](https://github.com/bk2dcradle/cpsig/tree/master/binary_search)
 
 I wrote another post telling how to go about learning DP. You can find it [here](http://ankitsultana.com/blog/2016/02/21/dp-resources/)
+
+###### Stage 3 | Post Beginner Phase
+
+Once you feel you have completed the first 2 stages, you should start competing in contests
+on Codeforces, CSAcademy, AtCoder, TopCoder, CodeChef regularly.
+
+Once you have solved around 100-150 problems, you can refer to
+[bits-cpsig/advanced](https://ankitsultana.com/bits-cpsig/advanced). Basically I had
+conducted a lecture series in my final semester of my college, and I had posted
+resources for whatever I had taught in the lectures. You won't find the lecture videos
+(because there aren't any), but you can use [this page](https://ankitsultana.com/bits-cpsig/advanced) to decide what you can study
+next and also to find a good collection of problems.
 
 ### Resources
 

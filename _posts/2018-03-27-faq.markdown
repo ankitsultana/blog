@@ -1,0 +1,50 @@
+---
+title: FAQ
+layout: post
+tags: [algorithms]
+---
+
+This post was last updated on 21 March, 2018.
+
+---
+
+**Question 1:** How to start competitive programming?
+
+**Answer:** I had written a blog post regarding this. [Link](https://ankitsultana.com/blog/2016/08/04/beginning-competitive-programming/)
+
+---
+
+**Question 2:** I think I am past the beginner phase, what do I do now?
+
+**Answer:** I conducted lectures on Competitive Programming (CP) as part of
+CP Special Interest Group (CPSIG) during my last semester in my college. I have
+posted most of the resources on [this page](https://ankitsultana.com/bits-cpsig/advanced).
+I think you can follow them to fix what you can study next.
+
+---
+
+**Question 3:** How much time should I spend thinking on a problem?
+
+**Answer:** I usually try to think on a problem for at least 40 minutes before resorting
+to editorial/hints etc. Once I am clear about the solution, I keep another 60 minute bound on
+coding it.
+
+---
+
+**Question 4:** I am not good at DP, how can I fix it?
+
+**Answer:** Start with solving TopCoder Div1-250 problems. Once you are comfortable with
+them, move on to Div1-500.
+
+---
+
+**Question 5:** Which website is best for practicing?
+
+**Answer:** Depends on what you are good at and what you want to be good at. My advice
+would be to focus mainly on Codeforces + at least 1 of (CSAcademy/AtCoder/TopCoder).
+
+---
+
+**Question 6:** Can you help me in debugging my code...
+
+**Answer:** No
