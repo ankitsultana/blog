@@ -105,10 +105,14 @@ Hence, maximum flow in this flow network is our answer.
 
 ---
 
-> **Implementation Problem 2:** Given a bipartite graph, find all the edges that belong to some maximum matching
+> **Problem 2:** Given a bipartite graph, find all the edges that belong to some maximum matching
 >                $$M$$
 
 **Solution:**
+
+Just run max-flow on a flow network created in the same fashion as in the previous problem.
+All edges $$(u, v)$$ with $$\ u \in P_1, \ v \in P_2$$ that have a unit flow through them
+will be part of the required matching $$M$$.
 
 ---
 
@@ -118,7 +122,7 @@ Hence, maximum flow in this flow network is our answer.
 
 **Solution:**
 
-First observation is that because of **Theorem 4**, if any matched node is connected to an unmatched
+First observation is that because of **Theorem 6**, if any matched node is connected to an unmatched
 node, then that matched node has to be in our $$|VC_{min}|$$.
 
 Second observation is that for each matched edge, exactly one of the vertices involved will be
@@ -134,15 +138,15 @@ the following algorithm:
 
 3. For every unmatched vertex on the left, start traveling along the newly oriented edges.
 
-4. Elements of $$|VC_{min}|$$ are the unvisited matched vertices on the left, and the matched
-   vertices on the right.
+4. Elements of $$|VC_{min}|$$ are the unvisited matched vertices on the left, and the visited
+matched vertices on the right.
 
-Visited matched vertices on the right since they were visited by an unmatched vertex, hence
-to cover the edge from we came to the matched vertex, we need to take the matched vertex
-in our $$|VC_{min}|$$.
+We take visited matched vertices on the right since they were visited by an unmatched vertex, hence
+to cover the edge through which we came to this matched vertex on the right,
+we need to take the matched vertex in our $$|VC_{min}|$$.
 
-Similarly we take unvisited vertices on the left because their matched vertex on the right
-was not taken, so to cover their matched edge, we take the unvisited vertex on the left.
+Similarly, we take unvisited vertices on the left because their corresponding vertex on the right
+was not taken — so to cover their matched edge, we take the unvisited matched vertex on the left.
 
 ---
 
@@ -162,7 +166,8 @@ to the associated weigth of the node on the right side.
 Now for every edge in the original graph, add an edge from the left to the right, with
 an infinite capacity.
 
-Now consider any path which goes from source - some node of left side - some node of right side - sink.
+Now consider any path which goes from source to some node on the left side to some node on the right side to
+the sink.
 
 Now let's see what does minimum cut mean.
 
