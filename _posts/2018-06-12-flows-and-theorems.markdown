@@ -1,20 +1,24 @@
 ---
-title: Flows and Theorems
+title: Max Flow - Theorems and Problems (WIP)
 layout: post
 tags: [algorithms]
 ---
 
-This draft is a dump of all my learning of flows:
+**Note:** This is a WIP as of 12 June 2018.
+
+This post consists of a collection of theorems and problems on Max-Flow/Min-Cut and should
+be useful for a quick revision on the topic.
 
 ---
 
-> **Theorem 1:** Take any independent set of a graph, it's complement is a vertex cover
+> **Theorem 1:** Consider any Independent Set ($$I$$) of a graph, it's complement ($$I'$$) is a Vertex Cover.
 
 **Proof:**
 
 Assume the theorem is not true, i.e, there exists some set $$I$$ such that $$I'$$ is
 not a vertex cover. Now if $$I'$$ is not a vertex cover, then there must exist some
-edge $$(a, b)$$ such that both $$a, b \in I'$$. Hence, we get a contradiction.
+edge $$(a, b)$$ such that $$a, b \notin I' \implies a, b \in I$$, which is
+a contradiction.
 
 ---
 
@@ -34,98 +38,81 @@ Can be proven using theorem 1.
 
 ---
 
-> **Theorem 2:** For a given network with integral capacities, there always
+> **Theorem 3:** For a given network with integral capacities, there always
 > exists a maximum flow such that flow pushed along every edge is an integer.
 
 **Proof:**
 
-Omitted as available online
+Known as the "Integrality Theorem". Proof omitted.
 
 ---
 
-> **Problem 1:** Given a bipartite graph $$G(V, E)$$, how to find the size of minimum
->                vertex cover?
-
-**Solution:**
-
-Let's call the two partites of the graph $$P_1$$ and $$P_2$$. Connect all vertices
-in $$P_1$$ to a newly created node, called $$S$$, with edges oriented from $$S$$ to
-a vertex of $$P_1$$, where each edge's capacity is 1.
-
-Similarly connect all nodes of $$P_2$$ to a newly created node $$T$$, where the edges
-are oriented from some node of $$P_2$$ to $$T$$, keeping edge's capacity as 1.
-
-Now add the edges from $$E$$, and orient them from some node in $$P_1$$ to some node
-in $$P_2$$, again keeping edge weight equal to 1.
-
-The maximum flow in this graph is equal to the minimum vertex cover.
-
-Try to think why that is the case.
-
----
-
-> **Problem 2:** Find the number of edges in maximum matching of a bipartite graph
-
-**Solution:**
-
-We use [Konig's Theorem](https://en.wikipedia.org/wiki/K%C5%91nig%27s_theorem_(graph_theory))
-without proof, which states the following:
-
-> In a bipartite graph, number of edges in a maximum matching is equal to the number of vertices
-> in the minimum vertex cover
-
-Now the problem is the same as **Problem 1**
-
-We will prove an easier theorem:
-
----
-
-> **Theorem 3:** Prove that the number of vertices in the minimum vertex cover is at least the number
->                of edges in maximum matching.
+> **Theorem 4:** (Konig's Theorem) In any bipartite graph, the number of edges in a maximum matching
+>                is equal to the number of vertices in a minimum vertex cover.
 
 **Proof:**
 
-I will omit the proof, for brevity of the post, and just share the key idea, which is that to
-cover all edges of $$M$$, you will need at least $$|M|$$ vertices.
+Refer to [Wikipedia](https://en.wikipedia.org/wiki/Kőnig%27s_theorem).
+
+---
+
+> **Theorem 5:** The number of vertices in the minimum vertex cover is at least the number
+>                of edges in maximum matching (you can't use Konig's theorem for the proof).
+
+**Proof:**
+
+The key idea is that to cover all edges of $$M$$, you will need at least
+$$|M|$$
+vertices.
 
 ---
 
 **Definition:** Henceforth, I will call a vertex matched if it is incident to at least one vertex
                 which is in $$M$$
 
-> **Theorem 4:** Given a graph $$G(V, E)$$, and a matching $$M$$, then $$VC_{min}$$ contains only
+> **Theorem 6:** Given a graph $$G(V, E)$$, and a maximum matching $$M$$,
+>                then $$VC_{\mathrm{min}}$$ contains only
 >                matched vertices.
 
-**Intuition:**
+**Proof:**
 
-We can use Konig's Theorem to understand this. Since
-
-$$
-
-|VC_{min}| = |M|
-
-$$
-
-and each edge of $$M$$ has to be covered, we have to take at least one vertex for each edge $$E$$
-that belongs to $$M$$
-
-Because of Konig's Theorem, we will have to take *exactly 1 vertex from each matched edge*.
-
-Now if we have to take $$k$$ more vertices for our minimum vertex cover, then size of $$VC_{min}$$
-will become greater than $$|M|$$
+Since each edge of $$|M|$$ needs to be covered, we would need at least 1 vertex from each
+edge present in $$|M|$$. Because of Konig's theorem,
+we would have to take exactly 1 vertex from each matched edge,
+which implies we can't take any other vertex.
 
 ---
 
-> **Problem 3:** Given a bipartite graph, find all the edges that belong to some maximum matching
+> **Problem 1:** Given a bipartite graph $$G(V, E)$$, how to find the size of minimum
+>                vertex cover or maximum matching?
+
+**Solution:**
+
+Let's create a flow network out of the given bipartite graph.
+Let's call the two independents parts of the graph $$P_1$$ and $$P_2$$. Connect all vertices
+in $$P_1$$ to a newly created node, $$S$$ (for Source), with edges oriented from $$S$$ to
+all vertices of $$P_1$$, where each edge's capacity is 1.
+
+Similarly connect all nodes of $$P_2$$ to a newly created node $$T$$ (sink), where the edges
+are oriented from some node of $$P_2$$ to $$T$$ and have capacity 1.
+
+Now add the edges from $$E$$, and orient them from some node in $$P_1$$ to some node
+in $$P_2$$, again keeping edge weight equal to 1.
+
+You might notice that every flow in this network is equivalent to a matching in $$G$$.
+
+Hence, maximum flow in this flow network is our answer.
+
+---
+
+> **Implementation Problem 2:** Given a bipartite graph, find all the edges that belong to some maximum matching
 >                $$M$$
 
 **Solution:**
 
-TODO
-
 ---
 
-> **Problem 4:** Find the *vertices* of any minimum vertex cover. In other words, for any
+> **Problem 4:** Find the *vertices* of any minimum vertex cover. To be precise, for any
 >                minimum vertex cover $$VC_{min}$$, you have to find all vertices $$v$$
 >                such that $$v \in VC_{min}$$
 
@@ -164,7 +151,7 @@ was not taken, so to cover their matched edge, we take the unvisited vertex on t
 
 **Solution:**
 
-Build a graph, with one partite on left side, and the other on the right side.
+Build a graph, with one part on the left side, and the other on the right side.
 
 Add an edge between every edge on the left and every edge on the right, with capacity equal
 to the associated weight of the node on the left side.
@@ -179,9 +166,9 @@ Now consider any path which goes from source - some node of left side - some nod
 
 Now let's see what does minimum cut mean.
 
-We need to disconnect source and sink, so we can either of the following three edges:
+We need to disconnect source and sink, so we can delete either of the following three edges:
 
-First say the sink is $$s$$, sink is $$t$$ and the node on the left is $$l$$ and the one on the right
+First say the source is $$s$$, sink is $$t$$ and the node on the left is $$l$$ and the one on the right
 is $$r$$
 
 1. $$(s, l)$$
