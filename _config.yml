@@ -1,31 +1,30 @@
 # Permalinks
-permalink:        pretty
+permalink: pretty
 
 # Setup
-url:              http://bk2dcradle.github.io
+url: http://ankitsultana.github.io
 
 # Set to '' in case of hosting on `http://<your-github-name>.github.io`
-baseurl:          /blog
+baseurl: /blog
 
-title:            Convoluted Ramblings
+title: Convoluted Ramblings
 
 # Markdown enabled, however don't use more than one paragraph (enforced by `>`)
-description:      >
-    Bababada
+description: >
+  This blog is moved to Notion.
 
 # The tags listed as entries in the sidebar
-sidebar_tags:     [vim, git, algorithms]
+sidebar_tags: [vim, git, algorithms]
 
 # Fallback image and color if not overwritten for tag or post
 #image:            https://raw.githubusercontent.com/bk2dcradle/blog/gh-pages/public/img/belakor.jpg
-color:            '#A85641'
+color: "#A85641"
 
 author:
-  name:           'Ankit Sultana'
-  twitter:        AnkitSultana
-  github:         bk2dcradle
-  photo:          # http://qwtel.com/public/img/flo.jpg
+  name: "Ankit Sultana"
+  github: ankitsultana
+  photo: # http://qwtel.com/public/img/flo.jpg
 
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
-  about:          |
-    whatever
+  about: |
+    A Software Engineer working on BigData/Backend systems at Uber BLR.
