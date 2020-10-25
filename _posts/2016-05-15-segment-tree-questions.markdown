@@ -1,5 +1,5 @@
 ---
-title: Questions on Segment Trees
+title: Standard Questions on Segment Trees
 layout: post
 tags: [algorithms]
 ---
@@ -10,7 +10,7 @@ This is a list of some standard segment tree questions and links to correspondin
 
 **Problem 1:** Given an array of $$N$$ integers, and queries of type
 
-`l r`  Return minimum and maxmium of elements in range `l` and `r`
+`l r` Return minimum and maxmium of elements in range `l` and `r`
 
 Queries should be $$O(log_2(n))$$
 
@@ -20,7 +20,7 @@ Queries should be $$O(log_2(n))$$
 
 **Problem 2:** Given an array of $$N$$ integers, and queries of type
 
-`l r`  Return the sum of elements in range `l` and `r`
+`l r` Return the sum of elements in range `l` and `r`
 
 Queries should be $$O(log_2(n))$$
 
@@ -42,14 +42,13 @@ Queries should be $$O(log_2(n))$$
 
 **Problem 4:** Given an array of $$N$$ integers, and queries of two types
 
-`1 l r x`  Add x to all elements of range l and r
-
+`1 l r x` Add x to all elements of range l and r
 
 `2 l r` Return sum of all elements in range l and r
 
 Both operations should be $$O(log_2(n))$$
 
-*Hint:* First operation is taken care of using Lazy Propagation
+_Hint:_ First operation is taken care of using Lazy Propagation
 
 **Link:** [HORRIBLE \| SPOJ](http://www.spoj.com/problems/HORRIBLE/)
 
@@ -57,12 +56,10 @@ Both operations should be $$O(log_2(n))$$
 
 **Problem 5:** Given an array of $$N$$ integers, and queries of type
 
-`l r`  Output the maximum contiguous subarray sum, formally return
+`l r` Output the maximum contiguous subarray sum, formally return
 
 $$
-
 max_{\ l \le p \le q \le r}\left(\sum_{i=p}^{q}{a_i} \right)
-
 $$
 
 Expected Complexity is $$O(log_2(n))$$
@@ -83,7 +80,7 @@ Expected Complexity is still $$O(log_2(n))$$
 
 **Problem 7:** Given an array of $$N$$ integers, and queries of types
 
-`k`  Find $$k^{th}$$ element of array if this array was sorted
+`k` Find $$k^{th}$$ element of array if this array was sorted
 
 `x y` Set the $$x^{th}$$ element of array to `y`
 
@@ -96,13 +93,11 @@ Either of complexities $$O(log_2(n))$$ or $$O(log_2^2(n))$$ will do
 `p` Find the elements with indices $$i$$ and $$j$$ such that
 
 $$
-
 i = min(x \ | \ x > p \ and \ a_x < a_p)
 
 \\
 
 j = max(x \ | \ x < p \ and \ a_x < a_p)
-
 $$
 
 Expected Complexity is $$O(log_2(n))$$ per query
@@ -113,9 +108,9 @@ Expected Complexity is $$O(log_2(n))$$ per query
 
 **Problem 9:** Given an array of $$N$$ integers, and queries of types
 
-`U i x`   Set the value of $$a_i$$ to `x`
+`U i x` Set the value of $$a_i$$ to `x`
 
-`Q x y`   Find the maximum sum $$a_i + a_j$$ where $$x \le i \lt j \le y$$
+`Q x y` Find the maximum sum $$a_i + a_j$$ where $$x \le i \lt j \le y$$
 
 **Link:** [KGSS \| SPOJ](http://spoj.com/problems/KGSS)
 
@@ -123,13 +118,13 @@ Expected Complexity is $$O(log_2(n))$$ per query
 
 **Problem 10:** You have to maintain a dynamic set `S` with the following operations
 
-`INSERT(S, x)`   Insert `x` in `S` if it is not already present
+`INSERT(S, x)` Insert `x` in `S` if it is not already present
 
-`DELETE(S, x)`   Delete `x` from `S`, if it exists in `S`
+`DELETE(S, x)` Delete `x` from `S`, if it exists in `S`
 
-`K-TH(S, k)`     Return the $$k^{th}$$ smallest element in S
+`K-TH(S, k)` Return the $$k^{th}$$ smallest element in S
 
-`COUNT(S, k)`    Count the number of elements in S with value less than `k`
+`COUNT(S, k)` Count the number of elements in S with value less than `k`
 
 All operations should be $$O(log_2(n))$$
 
